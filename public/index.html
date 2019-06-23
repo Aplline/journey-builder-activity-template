@@ -21,21 +21,39 @@
             require(config, dependencies);
         })();
     </script>
+    </script>
+
+    <!--Styles-->
+    <style type="text/css">
+        body {
+            padding: 20px;
+            margin: 0;
+        }
+        .step {
+            display: none;
+        }
+        #step1 {
+            display: block;
+        }
+    </style>
+
 </head>
-
 <body>
-    <div id="step1" class="step">
-        <div class="slds-grid">
+<div id="step1" class="step">
 
-            <main class="slds-col">
-               
-                <h1>welcome to your activity!</h1>
-            </main>
-            
+    Select your SMS message:
+    <select id="select1">
+        <option value="">Select an option</option>
+        <option value="someMessage">Some SMS</option>
+        <option value="anotherMessage">Another SMS</option>
+        <option value="thirdMessage">Third SMS</option>
+        <option value="unknownMessage">Unknown SMS</option>
+    </select>
 
-        </div>
+    <button id="toggleLastStep">Toggle Last Step</button>
+</div>
 
-    </div>
 </body>
+</html>
 
 </html>
